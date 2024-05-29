@@ -1,0 +1,34 @@
+body {
+    margin: 0px;
+    background-color: #F4F4F4;
+}
+
+#logo {
+    position: absolute !important;
+    left: 20px;
+}
+
+#logo img{
+    height: 30px;
+}
+
+#nav-bar{
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #303030;
+}
+
+#nav-item{
+    width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#nav-bar a, a:link, a:visited{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
