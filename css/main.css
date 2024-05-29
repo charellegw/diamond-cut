@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     background-color: #F4F4F4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
 }
 
 #logo {
@@ -13,11 +14,10 @@ body {
 }
 
 #nav-bar{
-    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #F4F4F4;
     background-color: #303030;
 }
 
@@ -28,7 +28,7 @@ body {
 }
 
 #nav-bar a, a:link, a:visited{
-    color: white;
+    color: #F4F4F4;
     text-decoration: none;
     padding: 20px;
 }

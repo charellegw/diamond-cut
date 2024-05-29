@@ -1,4 +1,101 @@
 #login {
-    border-bottom: 5px solid white !important;
+    border-bottom: 5px solid #F4F4F4 !important;
 }
 
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+#title{
+    text-align: center;
+    font-size: 50px;
+    color: #303030;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#loginForm{
+    width: 500px;
+}
+
+label {
+    font-weight: 500;
+}
+
+.input{
+    margin: 10px 0;
+}
+
+.box{
+    width: 500px;
+    height: 30px;
+    border-style: inset;
+    border-width: 2px;
+    border-radius: 7px;
+    border-color: #303030;
+    font-size: 14px;
+    margin: 0;
+    padding: 0 10px;
+}
+
+#phoneNumberBox{
+    display: flex;
+    width: 525px;
+}
+
+#phoneNumberPrefix {
+    width: fit-content !important;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.show{
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+    color: #3030307b;
+}
+
+.show:hover{
+    color: #303030;
+}
+
+#check{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+#submit{
+    color: white;
+    width: 80px;
+    height: 30px;
+    border-width: 0;
+    border-radius: 7px;
+    background-color: black;
+    cursor: pointer;
+}
+
+#errors{
+    background-color: rgba(255, 0, 0, 0.150);
+    color: darkred;
+    border-left-style: inset;
+    border-color: darkred;
+    border-width: 3.5px;
+    padding: 0 15px;
+    font-size: 12px;
+}

@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DiamondCut Motors -  Login</title>
+    <title>DiamondCut Motors - Login</title>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/login.js"></script>
 </head>
 <body>
     <div id="nav-bar">
@@ -32,5 +33,56 @@
         </div>
     </div>
 
+    <div id="content">
+        <div id="title">
+            LOGIN
+        </div>
+        <form name="login" action="home.html" method="POST" enctype="multipart/form-data"> 
+            <div id="loginForm"> 
+                <label for="username">Username:</label>   
+                <div class="input">
+                    <input type="text" class="box" id="username" name="username" placeholder="Enter your username">
+                </div>
+
+                <label for="email">E-mail:</label>
+                <div class="input">
+                    <input type="email" class="box" id="email" name="email" placeholder="user@example.com">
+                </div>
+
+                <label for="phoneNumber">Phone Number:</label>
+                <div class="input" id="phoneNumberBox">
+                    <div id="phoneNumberPrefix" class="box">+62</div>
+                    <input type="text" class="box" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number">
+                </div>
+
+                <label for="password">Password:</label>   
+                <div class="input">
+                    <input type="password" class="box" id="password" name="password"  placeholder="Enter your password">
+                    <div class="show" onclick="showPassword()">
+                        Show Password
+                    </div>
+                </div>
+
+                <label for="confirmPassword">Confirm Password:</label>   
+                <div class="input">
+                    <input type="password" class="box" id="confirmPassword" name="confirmPassword"  placeholder="Confirm your password">
+                    <div class="show" onclick="showPassword()">
+                        Show Password
+                    </div>
+                </div>
+
+                <div class="input">
+                    <div id="check">
+                        <input type="checkbox" id="agreement" name="agreement">
+                        <label for="agreement">Agree to the terms and services</label>
+                    </div>
+                </div>
+
+                <div id="errors"></div>
+                
+            </div>
+            <input type="submit" id="submit" value="Submit" onclick="submitData(event)">
+        </form>
+    </div>
 </body>
 </html>
