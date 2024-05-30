@@ -1,3 +1,50 @@
 #home {
     border-bottom: 5px solid #F4F4F4 !important;
 }
+
+#title{
+    margin-top: 50px;
+    font-family: khyay;
+    font-weight: 600;
+    text-align: center;
+    font-size: 50px;
+    color: #303030;
+    filter: drop-shadow(500px 5px 5px 5px #AAAAAA);
+}
+
+.image{
+    display: grid;
+    place-items: center;
+    margin: 2rem;
+}
+
+.cars{
+    margin: 0px;
+    width: 900px;
+    object-fit: cover;
+}
+
+label{
+    font-weight: 200;
+}
+
+#logoTitle{
+    text-align: center;
+}
+
+#text{
+    text-align: center;
+    font-size: 35px;
+    color: #303030;
+}
+
+#scroll-down{
+   width: 35px;
+}
+
+#leftArrow{
+    margin: 0 0 -500px -1000px;
+}
+#rightArrow{
+    margin: -500px -1000px 0 0;
+}
