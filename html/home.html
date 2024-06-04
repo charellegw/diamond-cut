@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="../assets/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DiamondCut Motors - Home</title>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/home.css">
+    <script src="../js/home.js"></script>
 </head>
 <body>
     <div id="nav-bar">
@@ -37,27 +39,78 @@
             DIAMONDCUT MOTORS
         </div>
 
-        <div id="sliderCar" class="image">
-            
+        <div id="sliderCars">
+                <img class="move" src="../assets/leftArrow.png" alt="left" onclick="previmg()">
 
-            <img id="leftArrow" src="../assets/leftArrow.png" alt="left">
-            <img class="cars" src="../assets/car1.png" alt="featured cars">
-            <img id="rightArrow" src="../assets/rightArrow.png" alt="right">
+                <div id="carsImage">
+                    <img src="../assets/car1.png" alt="image">
+                </div>
+                
+                <img class="move" src="../assets/rightArrow.png" alt="right" onclick="nextimg()">
         </div>
 
-        <!-- <div id="slider-radio" class="image">
-            <input type="radio" name="slider" id="slide1" checked>
-            <input type="radio" name="slider" id="slide2">
-            <input type="radio" name="slider" id="slide3">
-            <input type="radio" name="slider" id="slide4">
-            <input type="radio" name="slider" id="slide5">
-            <input type="radio" name="slider" id="slide6">
-        </div> -->
+        <div id="sliderText">
+            <div id="carsName">Porsche 718 Cayman</div>
+            <div id="featuredText">MEET OUR FEATURED CARS</div>
+        </div>
 
-        <div id="text">MEET OUR FEATURED CARS</div>
+        <div id="icons" class="image" >
+            <img id="scrollDown" src="../assets/Scroll Down.png" alt="Scroll Down">
+        </div>      
 
-        <div id="icons" class="image">
-            <img id="scroll-down" src="../assets/Scroll Down.png" alt="Scroll Down">
+        <div id="tagline">
+            <p>YOUR</p>
+            <p>SUCCESS</p>
+            <p>DESERVES</p>
+            <p>THE FINEST</p>
+        </div>
+    </div>
+
+    <div id="galleryTitle">Top-Tier Cars Gallery</div>
+    <div id="carGallery">
+        <div class="gallery">
+            <img class="toptierImage" src="../assets/toptier1.png" alt="image">
+            <div id="toptierName">2022 Chiron</div>
+            <div id="toptierBrand">Bugatti</div>
+            <div id="toptierPrice">IDR 48,890 Million</div>   
+            <a id="learnMore" href="toptier1.html">LEARN MORE</a>
+        </div>
+        <div class="gallery">
+            <img class="toptierImage" src="../assets/toptier2.png" alt="image">
+            <div id="toptierName">Huracan</div>
+            <div id="toptierBrand">Lamborghini</div>
+            <div id="toptierPrice">IDR 8,970 Million</div>   
+            <a id="learnMore" href="toptier1.html">LEARN MORE</a>
+        </div>
+        <div class="gallery">
+            <img class="toptierImage" src="../assets/toptier3.png" alt="image">
+            <div id="toptierName">F8 Tributo</div>
+            <div id="toptierBrand">Ferrari</div>
+            <div id="toptierPrice">IDR 6,340 Million</div>   
+            <a id="learnMore" href="toptier1.html">LEARN MORE</a>
+        </div>
+    </div>
+    <div id="carGallery">
+        <div class="gallery">
+            <img class="toptierImage" src="../assets/toptier4.png" alt="image">
+            <div id="toptierName">i7</div>
+            <div id="toptierBrand">BMW</div>
+            <div id="toptierPrice">IDR 3,240 Million</div>   
+            <a id="learnMore" href="toptier1.html">LEARN MORE</a>
+        </div>
+        <div class="gallery">
+            <img class="toptierImage" src="../assets/toptier5.png" alt="image">
+            <div id="toptierName">Model Y</div>
+            <div id="toptierBrand">Tesla</div>
+            <div id="toptierPrice">IDR 3,450 Million</div>   
+            <a id="learnMore" href="toptier1.html">LEARN MORE</a>
+        </div>
+        <div class="gallery">
+            <img class="toptierImage" src="../assets/toptier6.png" alt="image">
+            <div id="toptierName">F-Pace R-Dynamic</div>
+            <div id="toptierBrand">Jaguar</div>
+            <div id="toptierPrice">IDR 3,880 Million</div>   
+            <a id="learnMore" href="toptier1.html">LEARN MORE</a>
         </div>
     </div>
 
@@ -88,11 +141,11 @@
         <div id="logoTitle">
             <img src="../assets/logo.png" alt="logo">
             DiamondCut Motors
+            <div id="copyright">
+                &copy; 2024 DiamondCut Motors, Inc.
+            </div>
         </div>
 
-        <div id="copyright">
-            &copy; 2024 DiamondCut Motors, Inc.
-        </div>
 
     </footer>
 </body>
