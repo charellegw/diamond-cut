@@ -1,3 +1,20 @@
 #showroom {
     border-bottom: 5px solid #F4F4F4 !important;
 }
+
+#jumbotron{
+    top: 0;
+    height: 500px;
+    background-image: url(../assets/jumbotron.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    color: #F4F4F4;
+    padding: 0 5rem 0 5rem;
+}
