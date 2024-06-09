@@ -63,10 +63,9 @@ footer{
 }
 
 #footerItem{
-    padding: 3rem 0 5rem 3rem;
+    padding: 5rem 0 5rem 8rem;
     display: flex;
     flex-direction: row;
-    align-items: center;
 }
 
 #logoTitle{
@@ -75,13 +74,14 @@ footer{
     justify-content: center;
     align-items: center; 
     padding-bottom: 2rem;
-}
-
+    }
+    
 #logoTitle img{
     width: 150px;
 }
-
+        
 #leftContainer{
+    margin-right: 8rem;
     display: flex;
     flex-direction: column;
     line-height: 0;

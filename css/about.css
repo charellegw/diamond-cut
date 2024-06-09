@@ -1,3 +1,39 @@
 #about {
     border-bottom: 5px solid #F4F4F4 !important;
 }
+
+.divider{
+    width: 88%;
+    height: 0.8px;
+    background-color: rgb(150, 150, 150);
+    opacity: 0.5;
+    margin: 20px 0 20px 0;
+}
+
+#aboutUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#vision{
+    width: 85%;
+    text-align: justify;
+}
+
+#mission{
+    width: 85%;
+    text-align: justify;
+}
+
+#history{
+    width: 85%;
+    text-align: justify;
+}
+
+
+#container{
+    width: 100%;
+    text-align: center;
+}
