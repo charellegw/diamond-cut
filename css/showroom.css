@@ -2,6 +2,8 @@
     border-bottom: 5px solid #F4F4F4 !important;
 }
 
+
+
 #jumbotron{
     top: 0;
     height: 500px;
@@ -17,4 +19,18 @@
 #container{
     color: #F4F4F4;
     padding: 0 5rem 0 5rem;
+}
+
+#explore{
+    color: #303030;
+    background-color: #F4F4F4;
+    width: 170px;
+    padding: 10px;
+    text-align: center;
+    font-family: khyay;
+    font-weight: 600;
+}
+
+#subContent{
+    padding: 50px;
 }

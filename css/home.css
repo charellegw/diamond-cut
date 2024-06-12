@@ -6,9 +6,13 @@ html{
     scroll-behavior: smooth;
 }
 
+
 /* CONTENT */
+#content{
+    padding: 50px;
+}
+
 #title{
-    margin-top: 50px;
     font-weight: 600;
     text-align: center;
     font-size: 50px;
@@ -54,7 +58,7 @@ html{
 
 /* ----  */
 #scrollDown{
-   width: 35px; 
+    width: 35px; 
 }
 
 #icons {
@@ -68,16 +72,13 @@ html{
     background-color: #303030;
     padding: 5px;
     position: absolute;
-    top: 625px;
+    top: 610px;
     right: 0;
     font-size: 1.5rem;
     /* width: 250px; */
 }
 
 /* Cars Gallery */
-#gallery{
-    padding: 5rem 0 5rem 0;
-}
 
 #carGallery{
     display: flex;
@@ -85,7 +86,7 @@ html{
     align-items: center;
     justify-content: space-evenly;
     align-content: space-evenly;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 }
 
 #galleryTitle{
@@ -126,16 +127,21 @@ html{
 
 #toptierPrice {
     position: absolute;
-    color: white;
+    color: #cacaca;
     top: 320px;
     right: 20px;
 }
 
 #learnMore{
-    border: 2px solid white;
+    border: 2px solid #cacaca;
     position: absolute;
-    color: white;
+    color: #cacaca;
     padding: 5px 5px 2px 5px;
     top: 348px;
     right: 20px;
+}
+
+#learnMore:hover{
+    color: white;
+    border-color: white;
 }

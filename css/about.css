@@ -10,16 +10,19 @@
     margin: 20px 0 20px 0;
 }
 
-#aboutUs {
+#content {
+    color: #303030;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 50px;
 }
 
 #vision{
     width: 85%;
     text-align: justify;
+    margin-top: 0;
 }
 
 #mission{
@@ -36,4 +39,30 @@
 #container{
     width: 100%;
     text-align: center;
+}
+
+#findUsText{
+    margin-bottom: 0;
+}
+
+#findUs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100px;
+}
+
+#findUs img{
+    width: 50px;
+    justify-content: space-evenly;
+    transition: .5s;
+}
+
+#findUs img:hover{
+    transform: translate(0,-10px);
+}
+
+#thankYou{
+    padding-bottom: 5rem;
 }

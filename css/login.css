@@ -98,6 +98,10 @@ label {
     cursor: pointer;
 }
 
+#submit:hover{
+    background-color: rgb(62, 62, 62);
+}
+
 #errors{
     background-color: rgba(255, 0, 0, 0.150);
     color: darkred;
@@ -111,5 +115,5 @@ label {
 
 ::placeholder{
     font-family: khyay;
-    font-size: 5px;
+    font-size: 13px;
 }
