@@ -105,6 +105,7 @@ footer{
     background-color: #F4F4F4;
     color: #505050;
     text-align: center;
+    transition: 0.3s ease-out;
 }
 
 #leftContainer a {

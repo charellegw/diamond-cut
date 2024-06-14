@@ -33,6 +33,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 2.5s ease-in-out;
 }
 
 #carsImage img{
@@ -54,6 +55,16 @@ html{
 
 #sliderText{
     margin-bottom: 15px;
+}
+
+.move{
+    opacity: 0.4;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.move:hover{
+    opacity: 1;
 }
 
 /* ----  */

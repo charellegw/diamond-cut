@@ -7,6 +7,7 @@
     <title>DiamondCut Motors - Showroom</title>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/showroom.css">
+    
 </head>
 <body>
     <div id="nav-bar">
@@ -41,28 +42,79 @@
                     Explore our curated collection of the world's finest vehicles, featuring iconic brands like Porsche, Mercedes-Benz, Bugatti,and more. <br>
                     Discover the perfect blend of style, performance, and sophistication.
                 </p>
-                <div id="explore">VIEW SHOWROOM</div>
+                <a href="#subContent"><button id="explore">VIEW SHOWROOM</button></a>
             </div>
         </div>
-        
+
         <div id="subContent">
-            <h2>EXPLORE OUR SHOWROOM</h2>
-            <div id="srCarousel">
-                <div class="wrapper">
-                    <img src="../assets/leftArrow.png" alt="img" class="move">
-                    <div class="carousel">
-                        <img src="../assets/showroom1.png" alt="img">
-                        <img src="../assets/showroom2.png" alt="img">
-                        <img src="../assets/showroom3.png" alt="img">
-                        <img src="../assets/showroom4.png" alt="img">
-                        <img src="../assets/showroom5.png" alt="img">
+            <div class="carousel-title">EXPLORE OUR SHOWROOM</div>
+            <div class="carousel">
+                <button class="prev"><img src="../assets/leftArrow.png" alt=""></button>
+                <div class="carousel-container">
+                    <div class="carousel-card">
+                        <div class="carousel-img">
+                            <img src="../assets/showroom1.png" alt="" class="thumb">
+                        </div>
                     </div>
-    
-                    <img src="../assets/rightArrow.png" alt="img" class="move">
+                    <div class="carousel-card">
+                        <div class="carousel-img">
+                            <img src="../assets/showroom2.png" alt="" class="thumb">
+                        </div>
+                    </div>
+                    <div class="carousel-card">
+                        <div class="carousel-img">
+                            <img src="../assets/showroom3.png" alt="" class="thumb">
+                        </div>
+                    </div>
+                    <div class="carousel-card">
+                        <div class="carousel-img">
+                            <img src="../assets/showroom4.png" alt="" class="thumb">
+                        </div>
+                    </div>
+                    <div class="carousel-card">
+                        <div class="carousel-img">
+                            <img src="../assets/showroom5.png" alt="" class="thumb">
+                        </div>
+                    </div>
+                    <div class="carousel-card">
+                        <div class="carousel-img">
+                            <img src="../assets/showroom6.png" alt="" class="thumb">
+                        </div>
+                    </div>
+                </div>
+                <button class="next"><img src="../assets/rightArrow.png" alt=""></button>
+                <div class="carousel-radio">
+                    <input type="radio" id="radio-1" name="carousel-radio" checked>
+                    <label for="radio-1"></label>
+                    <input type="radio" id="radio-2" name="carousel-radio">
+                    <label for="radio-2"></label>
                 </div>
             </div>
+
+            <div class="gallery-title">THE GALLERY OF DIAMONDCUT MOTORS</div>
+            <div class="gallery">
+                <div class="gallery-container">
+                    <div class="gallery-img"><img src="../assets/showroom7.png" alt=""></div>
+                    <div class="gallery-img"><img src="../assets/showroom8.png" alt=""></div>
+                    <div class="gallery-img"><img src="../assets/showroom9.png" alt=""></div>
+                    <div class="gallery-img"><img src="../assets/showroom10.png" alt=""></div>
+                    <div class="gallery-img"><img src="../assets/showroom11.png" alt=""></div>
+                    <div class="gallery-img"><img src="../assets/showroom12.png" alt=""></div>
+                </div>
+
+                <div class="gallery-popup">
+                    <span>&times;</span>
+                    <div class="gallery-img"><img src="../assets/showroom7.png" alt=""></div>
+                </div>
+            </div>
+        </div>
     </div>
-        
-    </div>
-    </body>
+
+
+
+
+
+
+    <script src="../js/showroom.js"></script>
+</body>
 </html>

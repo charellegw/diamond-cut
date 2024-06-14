@@ -2,6 +2,10 @@
     border-bottom: 5px solid #F4F4F4 !important;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 #jumbotron{
     top: 0;
     height: 500px;
@@ -19,14 +23,27 @@
     padding: 0 5rem 0 5rem;
 }
 
+#container a{
+    padding: 0;
+}
+
 #explore{
+    border: none;
+    box-shadow: none;
     color: #303030;
     background-color: #F4F4F4;
     width: 170px;
-    padding: 10px;
+    padding: 13px;
     text-align: center;
     font-family: khyay;
     font-weight: 600;
+    scroll-behavior: smooth;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+#explore:hover{
+    background-color: #cacaca;
 }
 
 #subContent{
@@ -35,128 +52,197 @@
 
 /*      CAROUSEL      */
 
-.srCarousel{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.wrapper{
-    max-width: 1200px;
-    padding: 50px;
-    position: relative;
-}
-
-.wrapper .move{
-    top: 50%;
-    background-color: #fff;
-    border-radius: 50%;
-    position: absolute;
-    transform: translateY(-50%);
-}
-
-.wrapper .move:first-child {
-    /* left = 50px; */
-}
-
-.wrapper .move:last-child {
-    /* right = 20px; */
-}
-
-.wrapper .carousel{
-    font-size: 0;
-    cursor: pointer;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.carousel img{
-    height: 340px;
-    object-fit: cover;
-    margin-left: 14px;
-    width: calc(100% / 3);
-}
-
-.carousel img:first-child {
-    margin-left: 0;
-}
-
-/* #showroomCarousel{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: #303030;
-}
-
-.wrapper{
-    max-width: 1100px;
-    width: 100%;
-    position: relative;
-}
-
-.wrapper .move{
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.wrapper .move:first-child{
-    left: -15px;
-}
-
-.wrapper .move:last-child{
-    right: -15px;
-}
-
-.wrapper .carousel{
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 3) - 12px);
-    gap: 16px;
-    overflow: hidden;
-}
-
 .carousel{
+    position: relative;
+    overflow: hidden;
+    padding: 50px;
+}
+
+.carousel-title{
+    margin: 0;
+    padding-left: 2rem;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.carousel-container{
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    margin: 0 3rem;
     padding: 0;
+    transition: scroll-left 1s ease-out;
 }
 
-.carousel :where(.card, .img){
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.carousel-container::-webkit-scrollbar{
+    display: none;
 }
 
-
-.carousel .card{
+.carousel-card{
+    flex: 0 0 auto;
+    width: 280px;
     height: 300px;
-    list-style: none;
-    border-radius: 6px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #fff;
-
+    margin-right: 40px;
 }
 
-.card .img img{
+.carousel-img{
+    position: relative;
     width: 100%;
     height: 300px;
-    object-fit: cover;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    overflow: hidden;
 }
 
-@media screen and (max-width: 768px){
-    .wrapper .carousel{
-        grid-auto-columns: calc((100% / 2) - 9px);
-    }
+.thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
 
-} */
+.prev, .next{
+    width: 65px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    z-index: 8;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 1rem;
+    background: none;
+}
+
+.prev{
+    left: 0;
+}
+
+.next{
+    right: 0;
+}
+
+.prev img, .next img{
+    opacity: 0.4;
+    transition: opacity 0.3s;
+}
+
+.prev:hover img, .next:hover img{
+    opacity: 1;
+}
+
+.carousel-radio {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.carousel-radio input[type="radio"] {
+    display: none;
+}
+
+.carousel-radio label {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-out;
+}
+
+.carousel-radio label:hover {
+    background-color: #eee;
+}
+
+.carousel-radio input[type="radio"]:checked + label {
+    background-color: #333;
+}
+
+/*      gallery      */
+.gallery-title{
+    margin: 0;
+    padding: 4rem 0 2rem 0;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.gallery{
+    position: relative;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery .gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.gallery .gallery-container .gallery-img{
+    height: 250px;
+    width: 350px;
+    border: 5px solid #f4f4f4;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.gallery .gallery-container .gallery-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: 0.2s linear;
+    transition: 0.2s ease-out;
+}
+
+.gallery .gallery-container .gallery-img:hover img{
+    transform: scale(1.1);
+}
+
+.gallery .gallery-popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+
+.gallery .gallery-popup span{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 30px;
+    font-weight: lighter;
+    color: #f4f4f4;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.gallery .gallery-popup img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #f4f4f4;
+    /* width: 750px; */
+    object-fit: cover;
+}
+
+/*      responsive        */
+@media (max-width: 768px){
+    .gallery .gallery-popup img{
+        width: 65%;
+    }
+}
