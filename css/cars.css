@@ -1,3 +1,92 @@
 #cars {
     border-bottom: 5px solid #F4F4F4 !important;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    max-width: 1350px;
+    width: 100%;
+    padding: 20px;
+    margin: 50px auto;
+}
+
+.filter{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+button{
+    padding: 10px 20px;
+    font-family: khyay;
+    font-size: 15px;
+    color: #303030;
+    background: #f4f4f4;
+    border: 3px solid #303030;
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(48,48,48, 0.2);
+    cursor: pointer;
+}
+
+button.checked{
+    color: #f4f4f4;
+    background: #303030;
+}
+
+.carGallery{
+    display: flex;
+    margin-top: 25px;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.card{
+    flex-grow: 1;
+    flex-basis: 300px;
+    background-color: #303030;
+    padding: 10px;
+}
+
+.card .hide{
+    display: none;
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cardContainer{
+    padding: 15px 15px 15px 0;
+}
+
+.desc{
+    color: #303030;
+    background-color: #f4f4f4;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 8px;
+}
+
+.carName{
+    font-size: 20px;
+    color: #F4F4F4;
+    padding: 5px 0 0 0;
+}
+
+.carBrand{
+    font-size: 15px;
+    color: #F4F4F4;
+}

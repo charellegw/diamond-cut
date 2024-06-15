@@ -7,6 +7,7 @@
     <title>DiamondCut Motors - Cars</title>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/cars.css">
+    <script src="../js/cars.js" defer></script>
 </head>
 <body>
     <div id="nav-bar">
@@ -33,6 +34,63 @@
         </div>
     </div>
 
-    
+    <div class="container">
+        <div class="filter">
+            <button class="checked" data-name="all">Show All</button>
+            <button data-name="new">New Vehicles</button>
+            <button data-name="used">Used Vehicles</button>
+        </div>
+
+        <div class="carGallery">
+            <div class="card" data-name="used">
+                <img src="../assets/toptier1.png" alt="">
+                <div class="cardContainer">
+                    <span class="desc">Used</span>
+                    <h6 class="carName">2022 Chiron</h6>
+                    <p class="carBrand">Bugatti</p>
+                </div>
+            </div>
+            <div class="card" data-name="new">
+                <img src="../assets/toptier2.png" alt="">
+                <div class="cardContainer">
+                    <span class="desc">New</span>
+                    <h6 class="carName">Huracan</h6>
+                    <p class="carBrand">Lamborghini</p>
+                </div>
+            </div>
+            <div class="card" data-name="used">
+                <img src="../assets/toptier3.png" alt="">
+                <div class="cardContainer">
+                    <span class="desc">Used</span>
+                    <h6 class="carName">F8 Tributo</h6>
+                    <p class="carBrand">Ferrari</p>
+                </div>
+            </div>
+            <div class="card" data-name="new">
+                <img src="../assets/toptier4.png" alt="">
+                <div class="cardContainer">
+                    <span class="desc">New</span>
+                    <h6 class="carName">i7</h6>
+                    <p class="carBrand">BMW</p>
+                </div>
+            </div>
+            <div class="card" data-name="new">
+                <img src="../assets/toptier5.png" alt="">
+                <div class="cardContainer">
+                    <span class="desc">New</span>
+                    <h6 class="carName">Model Y</h6>
+                    <p class="carBrand">Tesla</p>
+                </div>
+            </div>
+            <div class="card" data-name="used">
+                <img src="../assets/toptier6.png" alt="">
+                <div class="cardContainer">
+                    <span class="desc">Used</span>
+                    <h6 class="carName">F-Pace R-Dynamic</h6>
+                    <p class="carBrand">Jaguar</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
