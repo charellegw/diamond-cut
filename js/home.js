@@ -10,7 +10,7 @@ window.onload = () => {
         document.getElementById("carsName").innerHTML = "<div>Mini Cooper 2025 2 Door Hatchback</div>";
     } else if (i === 3) {
         document.getElementById("carsImage").innerHTML = '<img src="../assets/car3.png" alt="image">';
-        document.getElementById("carsName").innerHTML = "<div>Audi R8 Spyder</div>";
+        document.getElementById("carsName").innerHTML = "<div>MacLaren 570s</div>";
     } else if (i === 4) {
         document.getElementById("carsImage").innerHTML = '<img src="../assets/car4.png" alt="image">';
         document.getElementById("carsName").innerHTML = "<div>Ferrari F40 Liberty Walk</div>";

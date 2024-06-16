@@ -50,6 +50,51 @@ body {
     padding: 20px;
 }
 
+/* #menu-toggle {
+    display: none;
+}
+
+#menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    #nav-bar {
+        height: auto;
+        justify-content: space-between;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    #menu-icon {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 15px;
+    }
+
+    #nav-item {
+        display: none;
+        width: 100%;
+        text-align: center;
+        background-color: #303030;
+        position: absolute;
+        top: 70px;
+        left: 0;
+    }
+
+    #menu-toggle:checked + #nav-items {
+        display: block;
+    }
+
+    #nav-item a {
+        display: block;
+        padding: 15px 0;
+    }
+} */
+
 /*          FOOTER           */
 
 footer{
