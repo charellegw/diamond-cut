@@ -55,7 +55,8 @@ body{
 .brandCarousel{
     display: inline-block;
     white-space: nowrap;
-    animation: slide 20s linear infinite ;
+    animation: 40s slide infinite linear;
+    animation-play-state: running;
 }
 
 @keyframes slide{
@@ -68,14 +69,15 @@ body{
 }
 
 .brandCarousel a{
-    padding: 0;
+    display: inline-block;
+    padding: 0 20px;
+    vertical-align: middle;
 }
 
 .brandCarousel img{
     height: 50px;
     margin: 0 40px;
 }
-
 
 /* Filterable - Gallery */
 .subTitle{
