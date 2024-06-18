@@ -1,42 +1,23 @@
 //      carousel
 
-const carousel = document.querySelector('.carousel');
-const carouselContainer = carousel.querySelector('.carousel-container');
-const prevButton = carousel.querySelector('.prev');
-const nextButton = carousel.querySelector('.next');
-const cards = carouselContainer.children;
-const cardWidth = cards[0].offsetWidth;
-let currentIndex = 0;
+let scrollContainer = document.querySelector(".carousel");
+let prevBtn = document.getElementById("prev");
+let nextBtn = document.getElementById("next");
 
-const radio1 = document.querySelector('#radio-1');
-const radio2 = document.querySelector('#radio-2');
-
-radio1.addEventListener('click', () => {
-  currentIndex = 0;
-  carouselContainer.scrollLeft = currentIndex * cardWidth;
+scrollContainer.addEventListener("wheel", (e) => {
+  e.preventDefault();
+  scrollContainer.scrollLeft += e.deltaY;
+  scrollContainer.style.scrollBehavior = "smooth";
 });
 
-radio2.addEventListener('click', () => {
-  currentIndex = 1;
-  carouselContainer.scrollLeft = currentIndex * cardWidth + carouselContainer.offsetWidth;
+nextBtn.addEventListener("click", () => {
+  scrollContainer.style.scrollBehavior = "smooth";
+  scrollContainer.scrollLeft += 950;
 });
 
-prevButton.addEventListener('click', () => {
-  currentIndex -= 1;
-  if (currentIndex < 0) {
-    currentIndex = 0;
-  }
-  carouselContainer.scrollLeft = currentIndex * cardWidth;
-  document.querySelector('#radio-1').checked = true;
-});
-
-nextButton.addEventListener('click', () => {
-  currentIndex += 1;
-  if (currentIndex >= cards.length) {
-    currentIndex = cards.length - 1;
-  }
-  carouselContainer.scrollLeft = currentIndex * cardWidth + carouselContainer.offsetWidth;
-  document.querySelector('#radio-2').checked = true;
+prevBtn.addEventListener("click", () => {
+  scrollContainer.style.scrollBehavior = "smooth";
+  scrollContainer.scrollLeft -= 950;
 });
 
 //      gallery

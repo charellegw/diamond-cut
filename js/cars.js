@@ -16,3 +16,8 @@ const filterCards = e => {
 };
 
 filterBtn.forEach(button => button.addEventListener("click", filterCards));
+
+// Brand Carousel
+
+var copy = document.querySelector(".brandCarousel").cloneNode(true);
+document.querySelector(".brand").appendChild(copy);

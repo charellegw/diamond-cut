@@ -2,8 +2,11 @@
     border-bottom: 5px solid #F4F4F4 !important;
 }
 
-html{
+* {
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -17,7 +20,6 @@ html{
     text-align: center;
     font-size: 50px;
     color: #303030;
-    filter: drop-shadow(500px 5px 5px 5px #AAAAAA);
 }
 
 /* Slider Featured Cars */
@@ -79,80 +81,99 @@ html{
 }
 
 #tagline{
-    color: #F4F4F4;
-    background-color: #303030;
-    padding: 5px;
-    position: absolute;
-    top: 610px;
-    right: 0;
-    font-size: 1.5rem;
-    /* width: 250px; */
+    color: #303030;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
 }
 
 /* Cars Gallery */
-
-#carGallery{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-evenly;
-    align-content: space-evenly;
-    margin-bottom: 4rem;
+#titleGallery{
+    text-align: center;
+    font-size: 35px;
+    padding: 100px 0 0 0;
 }
 
-#galleryTitle{
-    font-size: 30px;
-    color: #303030;
-    margin-left: 5.5rem;
-    margin-bottom: 1rem;
-}
-
-.gallery {
-    width: 390px;
-    height: 400px;
-    background-color: #303030;
+.container{
     position: relative;
+    max-width: 1350px;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 75px;
+    margin: 0px auto;
 }
 
-.toptierImage {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 350px;
+.carGallery{
+    display: flex;
+    margin-top: 25px;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
-#toptierName {
-    position: absolute;
-    color: white;
-    font-size: 30px;
-    top: 250px;
-    left: 20px;
+.card{
+    flex-grow: 1;
+    flex-basis: 300px;
+    background-color: #303030;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s ease;
 }
 
-#toptierBrand {
-    position: absolute;
-    color: white;
-    top: 290px;
-    left: 20px;
+.card:hover{
+    transform: translate(0, -10px);
 }
 
-#toptierPrice {
-    position: absolute;
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cardContainer{
+    padding: 15px 15px 15px 0;
+}
+
+.carName{
+    font-size: 20px;
+    color: #F4F4F4;
+    padding: 5px 0 0 0;
+}
+
+.carBrand{
+    font-size: 15px;
+    color: #F4F4F4;
+}
+
+.carPrice{
+    font-size: 12px;
     color: #cacaca;
-    top: 320px;
-    right: 20px;
 }
 
-#learnMore{
-    border: 2px solid #cacaca;
-    position: absolute;
-    color: #cacaca;
-    padding: 5px 5px 2px 5px;
-    top: 348px;
-    right: 20px;
-}
+@media (max-width: 768px){
+    #title{
+        font-size: 30px;
+    }
 
-#learnMore:hover{
-    color: white;
-    border-color: white;
+    #tagline{
+        font-size: 15px;
+    }
+
+    #featuredText, #titleGallery{
+        font-size: 25px;
+    }
+    #carsImage img{
+        width: 70vw;
+    }
+
+    #carsImage{
+        height: max-content;
+    }
+
+    .move{
+        width: 30px;
+    }
+
+    #scrollDown{
+        width: 25px;
+    }
 }

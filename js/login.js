@@ -35,7 +35,7 @@ function validatePhoneNumber(){
     if(phoneNumber == ""){
         document.getElementById('errors').innerHTML = "Please enter your phone number!"
         valid = false;
-    } else if(isNaN(phoneNumber) || phoneNumber.length < 10){ //isNaN => is not a number
+    } else if(isNaN(phoneNumber) || phoneNumber.length < 10 || phoneNumber[0] != '8'){ //isNaN => is not a number
         document.getElementById('errors').innerHTML = "Please enter valid phone number!"
         valid = false;
     } else if(valid){
